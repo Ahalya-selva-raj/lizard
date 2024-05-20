@@ -14,14 +14,85 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: palegoldenrod;
   display: flex;
-  flex-direction: column;
+  padding: 30px;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(5px + 2vmin);
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  box-sizing: border-box;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+}
+
+.info-slider-text {
+  position: absolute;
+    bottom:10px;
+    left: 10%;
+    color: white;
+    font-size: 24px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.info-slider .form {
+  background-color: white;
+  width: 50%;
+  position: absolute;
+  bottom: -300px; 
+  right: 10px; 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  background-color: rgb(255, 249, 175);
+  border-radius: 10px;
+}
+
+.info-slider .form input {
+  width: 40%;
+    border: 0.5px solid #d0d0d0;
+    border-radius: 5px;
+    padding: 10px; 
+    font-size: 16px; 
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    outline: none; 
+    margin: 5px;
+}
+
+.info-slider .form button {
+  width: 30%;
+  background-color: black;
   color: white;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 20px;
+  border-radius: 50px;
+  margin: 10px;
+}
+
+a {
+  padding: 10px;
+}
+
+a:link {
+  text-decoration: none;
+  color: palevioletred;
+}
+
+a:visited {
+  text-decoration: none;
+  color: palevioletred;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: brown;
 }
 
 .App-link {
